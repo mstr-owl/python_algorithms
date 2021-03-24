@@ -55,7 +55,7 @@ def access_users_1(): # Сложность:O(n^2)-Квадратичная.
 
 access_users_1()
 #
-def access_users_2(user, password): # Сложность:O(1)-Константная.
+def access_users_2(user, password): # Сложность:O(1)-Константная. Данное решение более эффективное т.к. менее сложное по 0-нотации.
     if user in users:
         if password == user_password.get(user) and user_status.get(user) == True:
             print(f'Welcome {user}, access allowed!')
